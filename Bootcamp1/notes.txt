@@ -1,0 +1,9 @@
+NOTES ABOUT THE COURSE WebDevelopment Bootcamp from Angela Yu 
+https://www.udemy.com/course/the-complete-web-development-bootcamp/
+Angela Yu - https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/
+
+VISUAL STUDIO CODE NOTES 
+https://code.visualstudio.com/docs
+
+Para aceder a pesquisa CTRL+P 
+Para editar os snippets do emmet é preciso ir as definições
