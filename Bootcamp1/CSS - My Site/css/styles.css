@@ -1,3 +1,31 @@
 body {
-    background-color: blue;
+    margin: 0px;
+    border: 0px;
+    font-family: monospace;
+    /* font-size: 2em; */
 }
+div {
+    margin: 0px;
+}
+
+/*****************************************CLASS STYLES********************************************/
+.top-container {
+    background-color: #f9f7f7;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.middle-container {
+    width: 200px;
+    height: 200px;
+    background-color: #3f72af;
+}
+
+.bottom-container {
+    width: 200px;
+    height: 200px;
+    background-color: #112d4e;
+
+}
+/******************************************ID STYLES**********************************************/
