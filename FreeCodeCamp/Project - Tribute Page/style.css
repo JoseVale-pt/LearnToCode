@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
 
+/* GENERAL TAGS */
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Gugi;
-    font-size: 24px;
     background-color: #343434;
     margin: 0;
     padding: 0;
@@ -10,35 +15,104 @@ body {
     scroll-behavior: smooth;
 }
 
-#image {
-    width: 600px;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-}
-
-figure {
-    text-align: center;
-    color: white;
-}
-
-.img-profile {
-    width: 450px;
-}
-
 h1 {
-    font-size: 100px;
+    font-size: 5rem;
     color: #24D910;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
     color: #24D910;
 }
+
+.quote {
+    background: #343434;
+    font-size: 1rem;
+    color: #24D910;
+    margin-top: auto;
+}
+
+p {
+    color: black;
+    line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+.main {
+    display: grid;
+    grid-template-columns: 130px 2fr 1fr 130px;
+}
+
+/* HEADER LEFT */
+
+.container-header-left {
+    grid-row: 1;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER RIGHT */
+
+.container-header-right {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    max-width: 600px;
+    box-shadow: #24D910;
+}
+
+.container-header-right figcaption {
+    color: white;
+    text-align: center;
+    color: #24D910;
+}
+
+/* ABOUT SECTION LEFT */
+
+.container-about-left{
+    grid-row: 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-about-left .quote {
+    align-items: center;
+}
+
+.container-about-left p {
+    color: white;
+}
+
+/* ABOUT SECTION RIGHT*/
+
+.container-about-right{
+    grid-row: 2;
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-profile {
+    max-width: 450px;
+}
+
+/* TABLE DESIGN */
 
 table {
     background-color: white;
@@ -47,7 +121,7 @@ table {
 }
 
 table caption {
-    background-color: #8A8A8A;
+    background-color: #343434;
     color: #24D910;
     font-size: 40px;
     padding: 15px;
@@ -55,11 +129,8 @@ table caption {
 
 th {
     text-align: left;
+    padding-left: 15px;
 }
-
-/* tr:nth-child(even) {
-    background-color: #dddddd;
-} */
 
 td {
     padding: 10px 0 0 10px;
@@ -73,63 +144,50 @@ td {
     padding: 10px 0 10px 0;
 }
 
-.quote {
-    color: #24D910;
-    display: block;
-    max-width: 900px;
-    text-align: left;
-    padding: 30px;
-}
-
-p {
-    color: white;
-    line-height: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
+/* FOOTER */
 
 footer {
-    display: flex;
-    background-color: white;
-    justify-content: center;
     height: 100px;
+    grid-row: 3;
+    grid-column: 2 / 4;
+    background: white;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer p {
-    color: black;
+    display: flex;
+    margin: auto;
 }
 
-.container-header {
-    display: grid;
-    grid-template-areas:
-        "left left right";
-    grid-template-columns: 30% 30% 40%;
-}
+/* MEDIA QUERIES */
 
-.container-header-left {
-    grid-area: left;
-    text-align: center;
-}
-
-.container-header-right {
-    grid-area: right;
-}
-
-.container-about{
-    display: grid;
-    grid-template-areas:
-        "about table";
-    grid-template-columns: 70% 30%;
-}
-
-.container-about-left{
-    grid-area: about;
-    padding: 0 30px 0 30px;
-}
-
-.container-about-right{
-    grid-area: table;
+@media (max-width: 700px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .container-header-left {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-header-right {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .container-about-left {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .container-about-right {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    footer {
+        grid-row: 5;
+        grid-column: 1;
+    }
 }
