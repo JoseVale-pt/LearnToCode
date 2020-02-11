@@ -16,8 +16,8 @@ Information Security and Quality Assurance Certification (300 hours)
 
 ## PROJECTS
 
-Build a Tribute Page [Not Passed]
-Build a Survey Form [Not Passed]
+Build a Tribute Page [Passed]
+Build a Survey Form [Passed]
 Build a Product Landing Page [Not Passed]
 Build a Technical Documentation Page [Not Passed]
 Build a Personal Portfolio Webpage [Not Passed]
