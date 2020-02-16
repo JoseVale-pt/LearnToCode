@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -7,13 +7,13 @@
     margin: 0 auto;
 }
 
-h1, 
+h1,
 h2,
 strong {
     font-weight: 900;
 }
 
-h1{
+h1 {
     font-size: 36px;
     color: #fff;
 }
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover,
-a:focus   {
+a:focus {
     background: #EF5839;
     color: #fff;
 }
@@ -67,4 +67,3 @@ header {
     margin-top: 25px;
     margin-right: 25px;
 }
-
