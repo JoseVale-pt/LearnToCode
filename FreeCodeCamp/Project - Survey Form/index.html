@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey Form></title>
+    <title>Survey Form - freeCodeCamp Project></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="card">
+    <h1 id="title">Star Wars Fan Survey</h1>
+    <p id="description">This survey form was build for the freeCodeCamp 
+        Responsive Web Design Module</p>
+    <form id="survey-form" action="">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="10" max="150" placeholder="Your age">
+        <br>
+        <label for="dropdown">What's your level of Star Wars Fan</label>
+        <input list="level" id="dropdown">
+        <datalist id="level">
+            <option value="I like it"></option>
+            <option value="I love it"></option>
+            <option value="I need it"></option>
+            <option value="Can't live whitout it"></option>
+        </datalist>
+        <br>
+        <p>What's your Legion?</p>
+        <input type="radio" name="legion" value="Republic">
+        <label for="legion">Republic</label>
+        <input type="radio" name="legion" value="Empire">
+        <label for="legion">Empire</label>
+        <br>
+        <p>Whitch trylogys did you see?</p>
+        <input type="checkbox" name="prequel-trilogy" value="Prequel trilogy">
+        <label for="trilogy">Prequel trilogy</label>
+        <input type="checkbox" name="original-trilogy" value="Original trilogy">
+        <label for="trilogy">Original trilogy</label>
+        <input type="checkbox" name="sequel-trilogy" value="Sequel trilogy">
+        <label for="trilogy">Sequel trilogy</label>
+        <br>
+        <label for="memory">Best memory</label><br>
+        <textarea name="memory" id="memory" cols="30" rows="5"></textarea>
+        <br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    </div>
 </body>
 </html>

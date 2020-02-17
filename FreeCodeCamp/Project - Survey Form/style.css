@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Gugi;
+    background-color: #343434;
+}
+
+.card {
+    display: block;
+    width: 800px;
+    background: grey;
+    margin: auto auto;
+    padding: 50px;
+}
+
+label {
+margin-right: 50px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[list] {
+    height: 25px;
+}
