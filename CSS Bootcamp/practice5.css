@@ -1,0 +1,175 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1792D2;
+    text-transform: uppercase;
+    margin: -1.5em;
+}
+
+/* HEADER */
+
+header {
+    background: #F8F8F8;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NAVIGATION MENU */
+
+nav ul {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #707070;
+    padding: 2em 0;
+    list-style: none;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792D2;
+    border-bottom: 2px solid #1792D2 ;
+}
+
+/* MAIN CONTENT */
+.article-feature,
+.article-line {
+    border-bottom: #707070 2px solid;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.article-feature,
+.article-recent {
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Change the order of the posts
+to image first and text second */
+
+.article-recent-content {
+    order: 2;
+}
+
+.article-recent-info {
+    order: 1;
+}
+/* ----------------------------- */
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+.article-read-more {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+/* SIDEBAR */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 710px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-content {
+        width: 70%;
+    }
+
+    .article-recent-info {
+        width: 25%;
+    }
+
+    .article-feature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-feature-img {
+        order: -1;
+        margin-bottom: 2em;
+    }
+}
