@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     font-family: Gugi;
     background-color: #343434;
@@ -14,9 +7,9 @@ body {
 
 .card {
     display: block;
-    width: 800px;
-    background: grey;
-    margin: auto auto;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.507);
+    margin: 0 auto;
     padding: 50px;
 }
 
